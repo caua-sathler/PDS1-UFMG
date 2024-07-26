@@ -128,7 +128,7 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
-    produto produtos[1000];
+   
     char linha[256];
     int num_de_produtos = 0;
 
@@ -139,6 +139,8 @@ int main(int argc, char *argv[]){
             printf("Número de produtos maior que 1000.\n");
             return 1;
         }
+    produto *produtos;
+    produtos = (produto *) malloc(num_de_produtos*sizeof(produto));
 
         for (int i = 0; i < num_de_produtos; i++) { //absorve todo conteúdo do arquivo nostruct
             if (fgets(linha, sizeof(linha), arq) != NULL) {
@@ -174,7 +176,8 @@ int main(int argc, char *argv[]){
         } else if (strcmp(param2, "6") == 0) {
             quantidade_total(produtos, num_de_produtos);
         }
+    free(produtos);
     }
-
+    
     return 0;
 }
