@@ -1,2 +1,2 @@
 # PDS1-UFMG
-Códigos referentes à disciplina de Programação e Desenvolvimento de Software 1, cursada na Universidade Federal de Minas Gerais.
+Repository focused on sharing the skills developed during the course Programming and Software Development 2 at the Universidade Federal de Minas Gerais (UFMG).
